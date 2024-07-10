@@ -239,7 +239,7 @@ span{
 }
 
 .portfolio-box:hover>img{
-    transform: sacle(1.1);
+    transform: scale(1.1);
     opacity: 0;
 }
 .portfolio-box .portfolio-layer{
