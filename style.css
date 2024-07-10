@@ -11,12 +11,12 @@
 }
 :root {
     --bg-color:#191f36;
-    --snd-bg-color:#262B40;
+    --snd-bg-color:#262b40;
     --text-color:#fff;
-    --main-color:#59B2F4;
+    --main-color:#59b2f4;
 }
 html, body{
-    height:200%;
+    height:100%;
     width:100%;
 }
 html{
@@ -41,6 +41,7 @@ section{
     justify-content: space-between;
     align-items:center;
     z-index:100;
+    padding:2rem 9%;
 }
 
 .logo{
@@ -50,7 +51,7 @@ section{
     cursor:default;
 }
 
-.navbar{
+.navbar a{
     font-size:1.5rem;
     color:var(--text-color);
     margin-left: 4rem;
@@ -150,7 +151,7 @@ span{
 .about{
     display:flex;
     justify-content:center;
-    justify-content:center;
+    align-items:center;
     gap:2rem;
     background: var(--snd-bg-color);
 }
@@ -175,3 +176,108 @@ span{
     margin: 2rem 0 3rem; 
 }
 
+.services h2{
+    margin-bottom: 5rem;
+}
+.services-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+}
+.services-container .services-box{
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding:3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align:center;
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5s ease;
+}
+.services-container .services-box:hover{
+    border-color: var(--main-color);
+    transform:scale(1.02);
+}
+.services-box i{
+    font-size:7rem;
+    color:var(--main-color);
+}
+.services-box h3{
+    font-size: 2.6rem;
+}
+.services-box p{
+    font-size:1.6rem;
+    margin:1rem 0 3rem;
+}
+
+
+.portfolio{
+    background: var(--snd-bg-color);
+}
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.portfolio-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    align-items:center;
+    gap:2.5rem;
+}
+
+.portfolio-container .portfolio-box{
+    position:relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    display:flex;
+    overflow:hidden;
+}
+.portfolio-box img{
+    width:100%;
+    transition: 0.5s ease;
+    opacity: 0.8;
+}
+
+.portfolio-box:hover>img{
+    transform: sacle(1.1);
+    opacity: 0;
+}
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1), var(--main-color));
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer{
+    transform: translate(0);
+}
+.portfolio-layer h4{
+    font-size: 3rem;
+}
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin:0.3rem 0 1rem;
+}
+.portfolio-layer a{
+    display:inline-flex;
+    justify-content:center;
+    align-items: center;
+    width: 5rem;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: var(--snd-bg-color);
+}
