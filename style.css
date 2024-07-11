@@ -49,9 +49,10 @@ section{
     color:var(--text-color);
     font-weight:700;
     cursor:pointer;
+    transition:0.5s ease;
 }
 .logo:hover {
-    box-shadow: 0 0 10 var(--text-color);
+    text-shadow: 0 0 1rem var(--text-color);
 }
 
 .navbar a{
@@ -59,10 +60,10 @@ section{
     color:var(--text-color);
     margin-left: 4rem;
     font-weight:700;
-
 }
 .navbar a:hover, .navbar a:active{
     color:var(--text-color);
+    text-decoration:underline;
 }
 
 #menu-icon{
