@@ -236,9 +236,10 @@ span{
     overflow:hidden;
 }
 .portfolio-box img{
-    width:100%;
+    height:30rem;
     transition: 0.5s ease;
     opacity: 0.8;
+    object-fit:cover;
 }
 
 .portfolio-box:hover>img{
@@ -277,12 +278,14 @@ span{
     justify-content:center;
     align-items: center;
     width: 5rem;
+    height: 5rem;
     background-color: var(--text-color);
-    border-radius: 50%;
+    border-radius: 10rem;
 }
-.portfolio-layer a i{
+.portfolio-layer i{
     font-size: 2rem;
     color: var(--snd-bg-color);
+    cursor:pointer;
 }
 
 .contact h2{
